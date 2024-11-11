@@ -1,0 +1,26 @@
+.day-detail-container {
+    -fx-padding: 8;
+}
+
+.day-detail-container Button {
+    -fx-min-width: 80;
+}
+
+.day-detail-top HBox {
+    -fx-spacing: 10;
+}
+
+.day-detail-top Label {
+    -fx-font-size: 14;
+}
+
+.day-detail-center {
+    -fx-padding: 10 0 10 0;
+}
+
+.day-detail-bottom,
+.day-detail-center,
+.day-detail-center VBox {
+    -fx-alignment: center;
+    -fx-spacing: 8;
+}

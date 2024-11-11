@@ -1,5 +1,5 @@
 package com.dustijohnson.Controllers;
 
-public class Controller {
+public class DayDetailController {
 
 }

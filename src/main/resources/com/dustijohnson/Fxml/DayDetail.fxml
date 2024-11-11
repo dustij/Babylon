@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="day-detail-container" stylesheets="@../Styles/DayDetail.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dustijohnson.Controllers.DayDetailController">
+    <top>
+        <VBox styleClass="day-detail-top" BorderPane.alignment="CENTER">
+            <children>
+                <HBox>
+                    <children>
+                        <Label text="Date:" />
+                        <Label text="YYYY-mm-dd" />
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label text="Balance:" />
+                        <Label text="\$-.--" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <HBox styleClass="day-detail-center" BorderPane.alignment="CENTER">
+            <children>
+                <VBox>
+                    <children>
+                        <Label text="Recorded Items" />
+                        <TableView prefHeight="600.0" prefWidth="600.0">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="C1" />
+                                <TableColumn prefWidth="75.0" text="C2" />
+                            </columns>
+                        </TableView>
+                        <Button mnemonicParsing="false" text="Add Item">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                     </graphic></Button>
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Label text="Scheduled Items" />
+                        <TableView prefHeight="600.0" prefWidth="600.0">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="C1" />
+                                <TableColumn prefWidth="75.0" text="C2" />
+                            </columns>
+                        </TableView>
+                        <Button mnemonicParsing="false" text="Add Item">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                     </graphic></Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox styleClass="day-detail-bottom" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" text="Save" />
+                <Button mnemonicParsing="false" text="Cancel" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

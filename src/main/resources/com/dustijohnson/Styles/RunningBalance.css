@@ -1,0 +1,24 @@
+.button-container {
+    -fx-alignment: center;
+    -fx-padding: 8;
+    -fx-spacing: 8;
+}
+
+.button-container Button {
+    -fx-padding: 8;
+    -fx-pref-width: 120;
+    -fx-font-size: 1.2em;
+}
+
+.button-container Button:hover {
+    -fx-cursor: hand;
+}
+
+.button-container .button-prev {
+    -fx-graphic-text-gap: 8.0;
+}
+
+.button-container .button-next {
+    -fx-content-display: right;
+    -fx-graphic-text-gap: 8.0;
+}
